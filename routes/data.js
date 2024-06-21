@@ -1,4 +1,5 @@
 const express = require("express");
+const nodemailer = require('nodemailer');
 
 // recordRoutes is an instance of the express router.
 // We use it to define our routes.
@@ -121,6 +122,13 @@ router.post('/trips', async (req, res) => {
   let newDocument = req.body;
   newDocument.created = new Date();
   let result = await collection.insertOne(newDocument);
+//   transporter.sendMail(mailOptions, function(error, info){
+//     if (error) {
+//         console.log(error);
+//     } else {
+//         console.log('Email sent: ' + info.response);
+//     }
+// });
   res.status(200).send(result)
 });
 

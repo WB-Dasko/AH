@@ -30,14 +30,14 @@ const options = {
       //   email: "info@email.com",
       // },
     },
-    servers: [
-      {
-        url: "https://msdocs-expressjs-mongodb-1337.azurewebsites.net",
-      },
-      {
-        url: `http://localhost:${PORT}`,
-      },
-    ],
+    // servers: [
+    //   {
+    //     url: "https://dasko-api-test.azurewebsites.net/",
+    //   },
+    //   {
+    //     url: `http://localhost:${PORT}`,
+    //   },
+    // ],
   },
   apis: ["./routes/*.js"],
 };
